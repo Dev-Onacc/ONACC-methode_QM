@@ -23,6 +23,7 @@ def calculate_performance_metrics(observed, simulated, corrected):
     return rmse_sim, rmse_corr, bias_sim, bias_corr
 
 # Interface Streamlit
+st.image("logo.png", width=80) 
 st.title("Correction des Biais Climatiques par Quantile Mapping")
 
 # Téléversement des fichiers
