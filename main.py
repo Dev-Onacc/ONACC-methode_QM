@@ -22,6 +22,13 @@ def calculate_performance_metrics(observed, simulated, corrected):
     bias_corr = np.mean(corrected - observed)
     return rmse_sim, rmse_corr, bias_sim, bias_corr
 
+# Configuration de l'application
+st.set_page_config(
+    page_title="ONACC-MC QM Method",
+    layout="wide",
+    page_icon="📈"
+)
+
 # Interface Streamlit
 st.image("logo.png", width=80) 
 st.title("Correction des Biais Climatiques par Quantile Mapping")
